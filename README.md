@@ -43,18 +43,20 @@ $ docker pull cr.gitlab.fhnw.ch/ml/sgds/kompetenzen/ml-trainingcenter:v20200912
 
 Fork this repository to your own user space by pressing the fork button on the upper right.
 
-Add @michael.graber as a maintainer to your fork. If you don't do this I won't see your submissions.
-
 
 ### 4. Clone your fork to your computer. 
 
 For this you might wanna set up a ssh-key for your computer, see here: https://docs.gitlab.com/ee/ssh/
 
-In your fork on GitLab find the address you can clone your Repo with and execute:
+In your fork on GitLab find the address with which you can clone your Repo on the upper right. Clone into your ml directory (`MY_ML_DIR`) using:
 
 ```
 $ git clone MY_REPO_FORK
 ```
+
+### 5. Create a directory `data` in `MY_ML_DIR`
+
+Here you will place all data files needed for the exercises and mini-challenges.
 
 
 ### 5. Start a trainingcenter container on your machine
@@ -63,11 +65,14 @@ $ git clone MY_REPO_FORK
 $ docker run -d \
     -p 8877:8888 \
     --user root \
-    -v PATH_TO_MY_TRAININGCENTER_REPO:/home/jovyan/ \
+    -v PATH_TO_MY_ML_DIR:/home/jovyan/ \
+    -v PATH_TO_MY_ML_DIR/data:/data \
     --name=ml_trainingcenter \
     cr.gitlab.fhnw.ch/ml/sgds/kompetenzen/ml-trainingcenter:v20200912 start.sh jupyter lab --LabApp.token=''
 
 ```
+
+(Replace `PATH_TO_MY_ML_DIR` with the actual path on your computer.)
 
 ### 6. Check that your container is running
 
