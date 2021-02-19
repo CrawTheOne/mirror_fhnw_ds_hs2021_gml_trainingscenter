@@ -36,7 +36,7 @@ Choose scope `read_registry` und `write_registry` to generate the access token.
 $ docker login cr.gitlab.fhnw.ch -u <username> -p <token>
 
 # now pull the image
-$ docker pull cr.gitlab.fhnw.ch/ml/sgds/kompetenzen/ml-trainingcenter:v20200912
+$ docker pull cr.gitlab.fhnw.ch/ml/sgds/kompetenzen/ml_trainingcenter:v20210220 
 ```
 
 ### 3. Fork this repository
@@ -68,7 +68,8 @@ $ docker run -d \
     -v PATH_TO_MY_ML_DIR:/home/jovyan/ \
     -v PATH_TO_MY_ML_DIR/data:/data \
     --name=ml_trainingcenter \
-    cr.gitlab.fhnw.ch/ml/sgds/kompetenzen/ml-trainingcenter:v20200912 start.sh jupyter lab --LabApp.token=''
+    cr.gitlab.fhnw.ch/ml/sgds/kompetenzen/ml_trainingcenter:v20210220 \
+    start.sh jupyter lab --LabApp.token=''
 
 ```
 
