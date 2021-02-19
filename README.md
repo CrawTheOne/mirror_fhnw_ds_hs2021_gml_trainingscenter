@@ -95,25 +95,10 @@ $ docker start ml_trainingcenter
 ```
 
 
-## Submitting assignments
+### 9. Fetching new assignments 
 
-You can now edit files in the clone of your fork on your local machine.
-Whenever you want to upload something to your Repo on GitLab you need to
-'commit' and 'push' it:
-
-```
-# commit MY_FILE
-$ git commit MY_FILE -m 'my commit message'
-
-# push all commits to the server
-$ git push
-```
-
-**By pushing your commits to your personal fork on GitLab you will submit the
-graded Mini-Challenges!**
-
-
-If you want to fetch new assignments from the master repo do as follows:
+Should there be any new assignments released, you can fetch them from the
+master repo do as follows:
 
 ```
 # add original repo as remote upstream 
