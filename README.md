@@ -100,7 +100,7 @@ $ docker start ml_trainingcenter
 ### 10. Fetching new assignments 
 
 Should there be any new assignments released, you can fetch them from the
-master repo do as follows:
+master repo as follows:
 
 ```
 # add original repo as remote upstream 
