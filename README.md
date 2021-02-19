@@ -54,12 +54,13 @@ In your fork on GitLab find the address with which you can clone your Repo on th
 $ git clone MY_REPO_FORK
 ```
 
+
 ### 5. Create a directory `data` in `MY_ML_DIR`
 
 Here you will place all data files needed for the exercises and mini-challenges.
 
 
-### 5. Start a trainingcenter container on your machine
+### 6. Start a trainingcenter container on your machine
 
 ```
 $ docker run -d \
@@ -75,18 +76,19 @@ $ docker run -d \
 
 (Replace `PATH_TO_MY_ML_DIR` with the actual path on your computer.)
 
-### 6. Check that your container is running
+
+### 7. Check that your container is running
 
 ```
 $ docker ps -a
 ```
 
-### 7. Connect to your container through your browser
+### 8. Connect to your container through your browser
 
 Enter `http://localhost:8877/lab` in your browser.
 
 
-### 8. Restart
+### 9. Restart
 
 If you later on need to restart your container you can just run
 
@@ -95,7 +97,7 @@ $ docker start ml_trainingcenter
 ```
 
 
-### 9. Fetching new assignments 
+### 10. Fetching new assignments 
 
 Should there be any new assignments released, you can fetch them from the
 master repo do as follows:
