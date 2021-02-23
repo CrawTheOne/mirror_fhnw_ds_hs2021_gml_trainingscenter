@@ -66,7 +66,7 @@ Here you will place all data files needed for the exercises and mini-challenges.
 $ docker run -d \
     -p 8877:8888 \
     --user root \
-    -v PATH_TO_MY_ML_DIR:/home/jovyan/ \
+    -v PATH_TO_MY_ML_DIR:/home/jovyan/work/ \
     -v PATH_TO_MY_ML_DIR/data:/data \
     --name=ml_trainingcenter \
     cr.gitlab.fhnw.ch/ml/sgds/kompetenzen/ml_trainingcenter:v20210220 \
