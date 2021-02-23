@@ -104,7 +104,7 @@ master repo as follows:
 
 ```
 # add original repo as remote upstream 
-$ git remote add upstream git@gitlab.fhnw.ch:ml/sgds/kompetenzen/ml-trainingcenter.git
+$ git remote add upstream git@gitlab.fhnw.ch:ml/sgds/kompetenzen/ml_trainingcenter.git
 
 # now whenever you want to merge the changes from the remote upstream repo, ie
 the one you forked from, you can do:
