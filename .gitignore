@@ -1,5 +1,6 @@
 *.ipynb_checkpoints/
 *__pycache__/
+*mnist_data/
 *_build/
 *.nbgrader.log
 *.swp
